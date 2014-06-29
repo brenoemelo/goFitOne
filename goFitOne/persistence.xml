@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="br.com.brenoemelo_goFitOne_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <class>br.com.brenoemelo.model.MealItemHist</class>
+    <class>br.com.brenoemelo.model.MealItem</class>
+    <class>br.com.brenoemelo.model.FoodNutrient</class>
+    <class>br.com.brenoemelo.model.UserDiet</class>
+    <class>br.com.brenoemelo.model.MeasureHistoric</class>
+    <class>br.com.brenoemelo.model.User</class>
+    <class>br.com.brenoemelo.model.FoodAlias</class>
+    <class>br.com.brenoemelo.model.MeasureType</class>
+    <class>br.com.brenoemelo.model.Unity</class>
+    <class>br.com.brenoemelo.model.Food</class>
+    <class>br.com.brenoemelo.model.ConversionFactor</class>
+    <class>br.com.brenoemelo.model.FoodType</class>
+    <class>br.com.brenoemelo.model.Meal</class>
+    <class>br.com.brenoemelo.model.Nutrient</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/dietproject"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
