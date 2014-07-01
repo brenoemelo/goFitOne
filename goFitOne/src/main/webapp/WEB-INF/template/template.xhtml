@@ -8,7 +8,7 @@
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title><ui:insert name="titulo">goFitOne Beta</ui:insert></title>
-        <h:outputStylesheet library="css" name="sistema7.css" />
+        <h:outputStylesheet library="css" name="sistema1.css" />
     </h:head>
     <h:body>
         <p:ajaxStatus styleClass="ajax-status">
@@ -27,25 +27,24 @@
                 </h:link>
             </div>
 
-            <div style="float: right; margin-right: 110px">
-                <h:form style="display: inline-block">
-                    <p:menubar styleClass="menu-sistema">
-                        <p:submenu label="Cadastros" >
-                        </p:submenu>
-                    </p:menubar>
-                </h:form>
+            <div style="float: right; margin-right: 10px">
+                <p:button outcome="/index" value="Sign up" title="Create a new account"/>
+                <p:button outcome="/index" value="Log in" title="Log in"/>
             </div>
             <div style="clear: both"></div>
         </header>
 
-        <div id="conteudo">
+        <div id="conteudo" >
             <ui:insert name="corpo"/>
         </div>
 
-        <p:separator style="margin-top: 20px"/>
 
-        <footer>    goFitOne - Teste de Desenvolvimento -
-            <a href="https://github.com/brenoemelo/goFitOne" target="_blank">GitHub</a>
+
+        <footer>
+            <h:outputLink value="https://github.com/brenoemelo/goFitOne" target="_blank">
+                <h:graphicImage library="imagens" name="github_circle_gray.png" />
+            </h:outputLink>
+
         </footer>
     </h:body>
 </html>
